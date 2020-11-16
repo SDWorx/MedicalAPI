@@ -15,7 +15,7 @@ namespace Medical.Models
         [Column(Order = 1), System.ComponentModel.DataAnnotations.Key, ForeignKey("Batch")]
         public int batch_id { get; set; }
         public int submittedEnv { get; set; }
-        public int collecttedEnv { get; set; }
+        public int collectedEnv { get; set; }
         public string status { get; set; }
 
         public virtual Batch Batch { get; set; }

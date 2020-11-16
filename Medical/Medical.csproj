@@ -266,6 +266,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\AuthorizerController.cs" />
+    <Compile Include="Controllers\BatchClaimedController.cs" />
     <Compile Include="Controllers\BatchesController.cs" />
     <Compile Include="Controllers\ClaimsController.cs" />
     <Compile Include="Controllers\CountController.cs" />
@@ -276,13 +277,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011160605027_first.cs" />
-    <Compile Include="Migrations\202011160605027_first.Designer.cs">
-      <DependentUpon>202011160605027_first.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011160645129_second.cs" />
-    <Compile Include="Migrations\202011160645129_second.Designer.cs">
-      <DependentUpon>202011160645129_second.cs</DependentUpon>
+    <Compile Include="Migrations\202011161104108_test.cs" />
+    <Compile Include="Migrations\202011161104108_test.Designer.cs">
+      <DependentUpon>202011161104108_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Auth.cs" />
@@ -379,11 +376,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011160605027_first.resx">
-      <DependentUpon>202011160605027_first.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011160645129_second.resx">
-      <DependentUpon>202011160645129_second.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011161104108_test.resx">
+      <DependentUpon>202011161104108_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
