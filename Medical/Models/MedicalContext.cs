@@ -26,6 +26,8 @@ namespace Medical.Models
 
         public System.Data.Entity.DbSet<Medical.Models.hr> hrs { get; set; }
 
+        public System.Data.Entity.DbSet<Medical.Models.RegisteredDevice> RegisteredDevices { get; set; }
+
         public System.Data.Entity.DbSet<Medical.Models.BatchClaimed> BatchClaimed { get; set; }
 
     }

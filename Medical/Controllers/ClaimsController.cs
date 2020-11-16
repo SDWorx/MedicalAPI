@@ -43,6 +43,32 @@ namespace Medical.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, query);
         }
 
+        [HttpPost]
+        [Route("GetClaimsById")]
+        public HttpResponseMessage GetClaimsById(int employeeId)
+        {
+            //string emp_id = employeeId.ToString();
+            var temp = from c in db.Claims
+                       join b in db.Batches
+                       on c.batch_id equals b.batch_id
+                       where c.emp_id == employeeId.ToString()
+                       group new { c.claim_id, c.emp_id, c.first_name, c.last_name, c.claim_date, b.batch_id, b.batch_date_to, c.number_of_claims } by c.claim_id;
+
+            var query = from t in temp
+                        select new
+                        {
+
+                            t.FirstOrDefault().emp_id,
+                            t.FirstOrDefault().claim_id,
+                            t.FirstOrDefault().batch_id,
+                            emp_name = t.FirstOrDefault().first_name + " " + t.FirstOrDefault().last_name,
+                            date_submit = t.FirstOrDefault().claim_date,
+                            t.FirstOrDefault().batch_date_to,
+                            t.FirstOrDefault().number_of_claims
+                        };
+            return Request.CreateResponse(HttpStatusCode.OK, query);
+        }
+
         // GET: api/Claims/5
         [ResponseType(typeof(Claims))]
         public IHttpActionResult GetClaims(int id)
