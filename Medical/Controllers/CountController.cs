@@ -21,7 +21,10 @@ namespace Medical.Controllers
                         on b.batch_id equals c.batch_id
                         where b.batch_date_to == null
                         select c.number_of_claims).ToList();
+                        
             int sum = query.Sum();
+           
+            
                         //group new { c.number_of_claims } by b.batch_id into countgroup
                         //select new
                         //{
