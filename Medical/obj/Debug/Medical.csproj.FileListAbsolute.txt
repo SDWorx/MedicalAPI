@@ -732,3 +732,4 @@ C:\Users\SD257064\Source\Repos\SDWorx\MedicalAPI\Medical\obj\Debug\Medical.dll
 C:\Users\SD257064\Source\Repos\SDWorx\MedicalAPI\Medical\obj\Debug\Medical.pdb
 C:\Users\SD257064\Source\Repos\SDWorx\MedicalAPI\Medical\obj\Debug\Medical.Migrations.first.resources
 C:\Users\SD257064\Source\Repos\SDWorx\MedicalAPI\Medical\obj\Debug\Medical.csproj.GenerateResource.cache
+C:\Users\SD257064\Source\Repos\SDWorx\MedicalAPI\Medical\obj\Debug\Medical.Migrations.second.resources

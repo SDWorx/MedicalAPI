@@ -23,9 +23,7 @@ namespace Medical.Controllers
     [Route("api/auth")]
     public class AuthsController : ApiController
     {
-        private MedicalContext db = new MedicalContext();
-
-    
+        private MedicalContext db = new MedicalContext();  
        
 
         // POST: api/auth

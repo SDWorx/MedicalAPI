@@ -280,6 +280,10 @@
     <Compile Include="Migrations\202011160605027_first.Designer.cs">
       <DependentUpon>202011160605027_first.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202011160645129_second.cs" />
+    <Compile Include="Migrations\202011160645129_second.Designer.cs">
+      <DependentUpon>202011160645129_second.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Auth.cs" />
     <Compile Include="Models\AuthRes.cs" />
@@ -377,6 +381,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202011160605027_first.resx">
       <DependentUpon>202011160605027_first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202011160645129_second.resx">
+      <DependentUpon>202011160645129_second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
