@@ -16,7 +16,7 @@ namespace Medical.Controllers
 
         private MedicalContext db = new MedicalContext(); 
 
-        [ResponseType(typeof(BatchClaimed))]
+        [ResponseType(typeof(BatchClaimed))] 
         [HttpGet]
         public IHttpActionResult GetBatchClaimed()
         {
@@ -37,6 +37,8 @@ namespace Medical.Controllers
             {
                 return BadRequest(ModelState);
             }
+            _ = (bc1.submittedEnv == bc1.collectedEnv) ? bc1.status = "Success" : bc1.status = "Mismatch";
+
             db.BatchClaimed.Add(bc1);
             db.SaveChanges();
 
