@@ -3,7 +3,7 @@ namespace Medical.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class first : DbMigration
     {
         public override void Up()
         {
@@ -22,7 +22,7 @@ namespace Medical.Migrations
                 c => new
                     {
                         claim_id = c.Int(nullable: false, identity: true),
-                        emp_id = c.Int(nullable: false),
+                        emp_id = c.String(),
                         first_name = c.String(),
                         last_name = c.String(),
                         number_of_claims = c.Int(nullable: false),

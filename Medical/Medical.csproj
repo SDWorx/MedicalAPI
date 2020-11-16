@@ -276,18 +276,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202008111317076_Initial.cs" />
-    <Compile Include="Migrations\202008111317076_Initial.Designer.cs">
-      <DependentUpon>202008111317076_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202008270719066_employeeID-string.cs" />
-    <Compile Include="Migrations\202008270719066_employeeID-string.Designer.cs">
-      <DependentUpon>202008270719066_employeeID-string.cs</DependentUpon>
+    <Compile Include="Migrations\202011160605027_first.cs" />
+    <Compile Include="Migrations\202011160605027_first.Designer.cs">
+      <DependentUpon>202011160605027_first.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Auth.cs" />
     <Compile Include="Models\AuthRes.cs" />
     <Compile Include="Models\Batch.cs" />
+    <Compile Include="Models\BatchClaimed.cs" />
     <Compile Include="Models\Claims.cs" />
     <Compile Include="Models\hr.cs" />
     <Compile Include="Models\MedicalContext.cs" />
@@ -378,11 +375,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202008111317076_Initial.resx">
-      <DependentUpon>202008111317076_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202008270719066_employeeID-string.resx">
-      <DependentUpon>202008270719066_employeeID-string.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011160605027_first.resx">
+      <DependentUpon>202011160605027_first.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
