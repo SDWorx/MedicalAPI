@@ -1,7 +1,5 @@
 namespace Medical.Migrations
 {
-
-    using Medical.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -20,23 +18,14 @@ namespace Medical.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
-
-            //context.hrs.AddOrUpdate(
-            //  p => p.emp_id,
-            //  new hr()
-            //  {
-            //      emp_id = 1,
-            //      password = "12345"
-            //  }
-            // );
-
-           
-
-            //context.Batches.AddOrUpdate(
-            //    p => p.batch_id,
-            //    new Batch() { batch_id = 1,  batch_date_from = DateTime.Now, batch_date_to = null }
+            //
+            //    context.People.AddOrUpdate(
+            //      p => p.FullName,
+            //      new Person { FullName = "Andrew Peters" },
+            //      new Person { FullName = "Brice Lambson" },
+            //      new Person { FullName = "Rowan Miller" }
             //    );
-
+            //
         }
     }
 }
