@@ -273,6 +273,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\AuthorizerController.cs" />
+    <Compile Include="Controllers\BatchClaimedController.cs" />
     <Compile Include="Controllers\BatchesController.cs" />
     <Compile Include="Controllers\ClaimsController.cs" />
     <Compile Include="Controllers\CountController.cs" />
@@ -292,6 +293,7 @@
     <Compile Include="Models\Auth.cs" />
     <Compile Include="Models\AuthRes.cs" />
     <Compile Include="Models\Batch.cs" />
+    <Compile Include="Models\BatchClaimed.cs" />
     <Compile Include="Models\Claims.cs" />
     <Compile Include="Models\hr.cs" />
     <Compile Include="Models\MedicalContext.cs" />
