@@ -15,7 +15,6 @@ using System.Web.Http.Results;
 using System.Linq;
 //using Tweetinvi;
 //using Lucene.Net.Support;
-//testing
 
 namespace Medical.Controllers
 
@@ -23,9 +22,7 @@ namespace Medical.Controllers
     [Route("api/auth")]
     public class AuthsController : ApiController
     {
-        private MedicalContext db = new MedicalContext();
-
-    
+        private MedicalContext db = new MedicalContext();  
        
 
         // POST: api/auth

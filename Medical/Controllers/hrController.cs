@@ -23,6 +23,7 @@ namespace Medical.Controllers
             return db.hrs;
         }
 
+
         // GET: api/hr/5
         [ResponseType(typeof(hr))]
         public IHttpActionResult Gethr(int id)
