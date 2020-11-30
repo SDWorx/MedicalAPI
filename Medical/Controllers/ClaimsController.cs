@@ -43,7 +43,7 @@ namespace Medical.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, query);
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("GetClaimsById")]
         public HttpResponseMessage GetClaimsById(int employeeId)
         {
