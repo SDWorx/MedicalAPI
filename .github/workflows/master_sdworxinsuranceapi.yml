@@ -27,9 +27,13 @@ jobs:
 
     - name: Restore NuGet packages
       run: nuget restore
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
     - name: Publish to folder
       run: msbuild /p:Configuration=Release /p:DeployOnBuild=true /t:WebPublish /p:WebPublishMethod=FileSystem /p:publishUrl=./published/ /p:PackageAsSingleFile=false
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
@@ -38,3 +42,5 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_75bc6c2cc2ff49db8dded909a41264d9 }}
         package: ./published/
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
